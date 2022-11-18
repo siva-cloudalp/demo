@@ -1,0 +1,75 @@
+{
+    "name": "RedeemPoints",
+    "fantasyName": "ApplyRedeemPoints",
+    "vendor": "Acme",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "Apply Redeem Points at the time of placing order",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/RedeemPoints.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/RedeemPoints/Configuration/RedeemPoints.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/RedeemPoints/Sass/_redeempoints-redeempoints.scss"
+        },
+        "files": [
+            "Modules/RedeemPoints/Sass/_redeempoints-redeempoints.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/RedeemPoints/Templates/acme_redeempoints_redeempoints.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/RedeemPoints/JavaScript/Acme.RedeemPoints.RedeemPoints.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/RedeemPoints/JavaScript/Acme.RedeemPoints.RedeemPoints.js",
+                    "Modules/RedeemPoints/JavaScript/RedeemPoints.View.js",
+                    "Modules/RedeemPoints/JavaScript/Acme.RedeemPoints.RedeemPoints.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/RedeemPoints/SuiteScript/Acme.RedeemPoints.RedeemPoints.js",
+        "files": [
+            "Modules/RedeemPoints/SuiteScript/Acme.RedeemPoints.RedeemPoints.js",
+            "Modules/RedeemPoints/SuiteScript/RedeemPoints.ServiceController.js",
+            "Modules/RedeemPoints/SuiteScript/RedeemPoints.model.js"
+        ]
+    },
+    "local_folder": "Workspace\\RedeemPoints",
+    "suitescript2": {
+        "files": []
+    }
+}

@@ -1,0 +1,108 @@
+{
+	"name": "GridOrderExtension",
+	"fantasyName": "Grid Order Extension",
+	"vendor": "Grid",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "My cool extension does magic!",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/GridOrderModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/GridOrderModule/Configuration/GridOrderModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/GridOrderModule/Templates/grid_gridorderextension_gridordermodule.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/GridOrderModule/Templates/grid_gridorderextension_gridordermodule.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/GridOrderModule/Templates/grid_gridorderextension_gridordermodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/GridOrderModule/Sass/_gridorderextension-gridordermodule.scss",
+			"myaccount": "Modules/GridOrderModule/Sass/_gridorderextension-gridordermodule.scss",
+			"checkout": "Modules/GridOrderModule/Sass/_gridorderextension-gridordermodule.scss"
+		},
+		"files": [
+			"Modules/GridOrderModule/Sass/_gridorderextension-gridordermodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.js",
+			"myaccount": "Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.js",
+			"checkout": "Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.js",
+					"Modules/GridOrderModule/JavaScript/GridOrderModule.View.js",
+					"Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.Model.js",
+					"Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.js",
+					"Modules/GridOrderModule/JavaScript/GridOrderModule.View.js",
+					"Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.Model.js",
+					"Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.js",
+					"Modules/GridOrderModule/JavaScript/GridOrderModule.View.js",
+					"Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.Model.js",
+					"Modules/GridOrderModule/JavaScript/Grid.GridOrderExtension.GridOrderModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/GridOrderModule/SuiteScript/Grid.GridOrderExtension.GridOrderModule.js",
+		"files": [
+			"Modules/GridOrderModule/SuiteScript/Grid.GridOrderExtension.GridOrderModule.js",
+			"Modules/GridOrderModule/SuiteScript/GridOrderModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/GridOrderModule/SuiteScript2/GridOrderModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Grid/GridOrderExtension@1.0.0",
+	"activation_id": "15",
+	"extension_id": "14912"
+}

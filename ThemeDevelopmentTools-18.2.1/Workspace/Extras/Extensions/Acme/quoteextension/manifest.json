@@ -1,0 +1,116 @@
+{
+	"name": "quoteextension",
+	"fantasyName": "addingquoteincart",
+	"vendor": "Acme",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "adding quote button in cart",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/quoteextension.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/quoteextension/Configuration/quoteextension.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/quoteextension/Templates/acme_quoteextension_quoteextension.tpl",
+					"Modules/quoteextension/Templates/acme_quoteextension_emailquote.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/quoteextension/Templates/acme_quoteextension_quoteextension.tpl",
+					"Modules/quoteextension/Templates/acme_quoteextension_emailquote.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/quoteextension/Templates/acme_quoteextension_quoteextension.tpl",
+					"Modules/quoteextension/Templates/acme_quoteextension_emailquote.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/quoteextension/Sass/_quoteextension-quoteextension.scss",
+			"myaccount": "Modules/quoteextension/Sass/_quoteextension-quoteextension.scss",
+			"checkout": "Modules/quoteextension/Sass/_quoteextension-quoteextension.scss"
+		},
+		"files": [
+			"Modules/quoteextension/Sass/_quoteextension-quoteextension.scss",
+			"Modules/quoteextension/Sass/_quoteextension-emailquote.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.js",
+			"myaccount": "Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.js",
+			"checkout": "Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.js",
+					"Modules/quoteextension/JavaScript/quoteextension.View.js",
+					"Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.Model.js",
+					"Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.SS2Model.js",
+					"Modules/quoteextension/JavaScript/quotemodel.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.js",
+					"Modules/quoteextension/JavaScript/quoteextension.View.js",
+					"Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.Model.js",
+					"Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.SS2Model.js",
+					"Modules/quoteextension/JavaScript/quotemodel.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.js",
+					"Modules/quoteextension/JavaScript/quoteextension.View.js",
+					"Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.Model.js",
+					"Modules/quoteextension/JavaScript/Acme.quoteextension.quoteextension.SS2Model.js",
+					"Modules/quoteextension/JavaScript/quotemodel.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/quoteextension/SuiteScript/Acme.quoteextension.quoteextension.js",
+		"files": [
+			"Modules/quoteextension/SuiteScript/Acme.quoteextension.quoteextension.js",
+			"Modules/quoteextension/SuiteScript/quoteextension.ServiceController.js",
+			"Modules/quoteextension/SuiteScript/KDSmartFreight.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/quoteextension/SuiteScript2/quoteextension.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Acme/quoteextension@1.0.0",
+	"activation_id": "15",
+	"extension_id": "15712"
+}

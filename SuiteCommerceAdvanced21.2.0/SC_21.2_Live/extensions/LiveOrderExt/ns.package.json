@@ -1,0 +1,15 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.ts"
+        ],
+        "ssp-libraries": [
+            "SuiteScript/*.js"
+        ]
+    },
+    "overrides":{
+        "Commons/LiveOrder/SuiteScript/LiveOrder.Model.js":"SuiteScript/LiveOrder.Model.js",
+        "Commons/LiveOrder/SuiteScript/LiveOrder.ServiceController.js":"SuiteScript/LiveOrder.ServiceController.js"
+      
+    }
+}

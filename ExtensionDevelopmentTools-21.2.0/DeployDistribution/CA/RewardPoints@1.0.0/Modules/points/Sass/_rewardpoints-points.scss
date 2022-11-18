@@ -1,0 +1,80 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+// .points-info-card {
+//     @extend .info-card;
+// }
+
+.points-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.rewardpoints-confirmation-module{
+	color: $sc-color-success;
+	text-transform: capitalize;
+}
+
+.reward-points-container {
+	padding-left:$sc-padding-lv3;
+}
+.reward-points-code {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.reward-points-value{
+	color: $sc-color-theme-700;
+    word-wrap: break-word;
+}
+
+// .cart-promocode-list-item-remove-action {
+// 	margin-left: $sc-margin-lv1;
+// 	cursor: pointer;
+// 	display: inline-block;
+// 	vertical-align: middle;
+
+// 	i {
+// 		@extend .icon-base;
+// 		@extend %fa-times-circle;
+// 		color: $sc-color-secondary;
+// 		line-height: $sc-target-size;
+// 	}
+// }
+
+.redeem-confirmation-module{
+	color: $sc-color-success;
+	text-transform: capitalize;
+	}
+	
+	.redeem-points-container {
+	padding-left:$sc-padding-lv3;
+	}
+	.redeem-points-code {
+	display: inline-block;
+	vertical-align: middle;
+	}
+	
+	.redeem-points-value{
+	color: $sc-color-theme-700;
+		word-wrap: break-word;
+	}
+	.redeem-promocode-list-item-remove-action{
+		margin-left: $sc-margin-lv1;
+			cursor: pointer;
+			display: inline-block;
+			vertical-align: middle;
+		
+			i {
+				@extend .icon-base;
+				@extend %fa-times-circle;
+				color: $sc-color-secondary;
+				line-height: $sc-target-size;
+			}
+	}

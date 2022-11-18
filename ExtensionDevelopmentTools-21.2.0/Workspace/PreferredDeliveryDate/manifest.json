@@ -1,0 +1,59 @@
+{
+    "name": "PreferredDeliveryDate",
+    "fantasyName": "Preferred Delivery Date",
+    "vendor": "CloudAlp",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "in check out page and review page date filed will show use can pick up date for preferred delivery date",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/PreferredDeliveryDate/Sass/_preferreddeliverydate-preferreddeliverydate.scss"
+        },
+        "files": [
+            "Modules/PreferredDeliveryDate/Sass/_preferreddeliverydate-preferreddeliverydate.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/PreferredDeliveryDate/Templates/cloudalp_preferreddeliverydate_preferreddeliverydate.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/PreferredDeliveryDate/JavaScript/CloudAlp.PreferredDeliveryDate.PreferredDeliveryDate.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/PreferredDeliveryDate/JavaScript/CloudAlp.PreferredDeliveryDate.PreferredDeliveryDate.js",
+                    "Modules/PreferredDeliveryDate/JavaScript/PreferredDeliveryDate.View.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\PreferredDeliveryDate",
+    "suitescript2": {
+        "files": []
+    }
+}

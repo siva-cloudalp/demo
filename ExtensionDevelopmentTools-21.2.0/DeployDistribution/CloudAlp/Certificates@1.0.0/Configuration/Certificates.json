@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "viewcertificates",
+        "title": "View Certificates",
+        "description": "ViewCertificates of My Account experience that restricte's the customer based on the role  ",
+        "group": "myAccountApp"
+    },
+    "properties": { 
+        "Certificates.roleId": {
+            "group": "myAccountApp",
+            "subtab": "viewcertificates",
+            "type": "string",
+            "title": "ViewCertificatesRoleId",
+            "description": "The given roleId ,using this contact role can only see certificates in myaccount remaning menu will be hidden",
+            "default": "1070"
+        },
+        "CustomAccountRegisterModule.eAuthor": {
+            "group": "extensions",
+            "subtab": "CustomAccountRegisterModule_subtab",
+            "type": "integer",
+            "title": "Email Author",
+            "description": "Email Author description example",
+            "default": ""
+        },
+        "CustomAccountRegisterModule.eRecipient": {
+            "group": "extensions",
+            "subtab": "CustomAccountRegisterModule_subtab",
+            "type": "string",
+            "title": "Email Recipient",
+            "description": "Email Recipient description example",
+            "default": ""
+        }
+    }
+}

@@ -1,0 +1,17 @@
+define('sc_blog_preview.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<div class=\"col-sm-4 blog-preview-control\">\n	<div class=\"blog-preview-container\">\n		<a class=\"img-container\" href=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"url") || (depth0 != null ? compilerNameLookup(depth0,"url") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data,"loc":{"start":{"line":3,"column":33},"end":{"line":3,"column":40}}}) : helper)))
+    + "\"><img src=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"previewImage") || (depth0 != null ? compilerNameLookup(depth0,"previewImage") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"previewImage","hash":{},"data":data,"loc":{"start":{"line":3,"column":52},"end":{"line":3,"column":68}}}) : helper)))
+    + "\" alt=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"previewImageAlt") || (depth0 != null ? compilerNameLookup(depth0,"previewImageAlt") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"previewImageAlt","hash":{},"data":data,"loc":{"start":{"line":3,"column":75},"end":{"line":3,"column":94}}}) : helper)))
+    + "\"/></a>\n		<a class=\"post-content\" href=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"url") || (depth0 != null ? compilerNameLookup(depth0,"url") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data,"loc":{"start":{"line":4,"column":32},"end":{"line":4,"column":39}}}) : helper)))
+    + "\"><h2>"
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"title") || (depth0 != null ? compilerNameLookup(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":4,"column":45},"end":{"line":4,"column":54}}}) : helper)))
+    + "</h2></a>\n	</div>\n	<div class=\"post-by\">\n		<a class=\"post-by-link\" href=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"url") || (depth0 != null ? compilerNameLookup(depth0,"url") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data,"loc":{"start":{"line":7,"column":32},"end":{"line":7,"column":39}}}) : helper)))
+    + "\" >Read Full article </a>\n	</div>\n</div>";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/NetSuite/SC_Blog/1.1.1/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/DemoCloudAlp/Suite_Commerce_Base_Theme/20.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'sc_blog_preview'; return template;});

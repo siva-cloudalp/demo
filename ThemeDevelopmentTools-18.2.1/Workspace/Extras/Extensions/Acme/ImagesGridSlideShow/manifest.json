@@ -1,0 +1,123 @@
+{
+	"name": "ImagesGridSlideShow",
+	"fantasyName": "Images Grid Carousel",
+	"vendor": "Acme",
+	"type": "extension",
+	"cct": {
+		"icon": "img/cct_example_sccctencourage_icon.svg",
+		"settings_record": "customrecordcustom_images_grid_cct",
+		"registercct_id": "images_grid_carousel_cct"
+	},
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "in this slide show we can use both grid and non-grid carousel!",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": [
+				"fonts/slick.eot",
+				"fonts/slick.svg",
+				"fonts/slick.ttf",
+				"fonts/slick.woff"
+			]
+		},
+		"services": {
+			"files": [
+				"services/ImagesGridSlideShow.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ImagesGridSlideShow/Configuration/ImagesGridSlideShow.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ImagesGridSlideShow/Templates/acme_imagesgridslideshow_imagesgridslideshow.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/ImagesGridSlideShow/Templates/acme_imagesgridslideshow_imagesgridslideshow.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/ImagesGridSlideShow/Templates/acme_imagesgridslideshow_imagesgridslideshow.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ImagesGridSlideShow/Sass/_imagesgridslideshow-imagesgridslideshow.scss",
+			"myaccount": "Modules/ImagesGridSlideShow/Sass/_imagesgridslideshow-imagesgridslideshow.scss",
+			"checkout": "Modules/ImagesGridSlideShow/Sass/_imagesgridslideshow-imagesgridslideshow.scss"
+		},
+		"files": [
+			"Modules/ImagesGridSlideShow/Sass/_imagesgridslideshow-imagesgridslideshow.scss",
+			"Modules/ImagesGridSlideShow/Sass/slick-theme.scss",
+			"Modules/ImagesGridSlideShow/Sass/slick.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.js",
+			"myaccount": "Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.js",
+			"checkout": "Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.js",
+					"Modules/ImagesGridSlideShow/JavaScript/ImagesGridSlideShow.View.js",
+					"Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.Model.js",
+					"Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.SS2Model.js",
+					"Modules/jquery.slick/Javascript/jquery.slick.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.js",
+					"Modules/ImagesGridSlideShow/JavaScript/ImagesGridSlideShow.View.js",
+					"Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.Model.js",
+					"Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.SS2Model.js",
+					"Modules/jquery.slick/Javascript/jquery.slick.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.js",
+					"Modules/ImagesGridSlideShow/JavaScript/ImagesGridSlideShow.View.js",
+					"Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.Model.js",
+					"Modules/ImagesGridSlideShow/JavaScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.SS2Model.js",
+					"Modules/jquery.slick/Javascript/jquery.slick.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ImagesGridSlideShow/SuiteScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.js",
+		"files": [
+			"Modules/ImagesGridSlideShow/SuiteScript/Acme.ImagesGridSlideShow.ImagesGridSlideShow.js",
+			"Modules/ImagesGridSlideShow/SuiteScript/ImagesGridSlideShow.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ImagesGridSlideShow/SuiteScript2/ImagesGridSlideShow.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Acme/ImagesGridSlideShow@1.0.0",
+	"activation_id": "15",
+	"extension_id": "11212"
+}

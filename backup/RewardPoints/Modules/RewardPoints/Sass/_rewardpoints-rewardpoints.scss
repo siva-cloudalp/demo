@@ -1,0 +1,22 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.rewardpoints-info-card {
+    // @extend .info-card;
+}
+
+.rewardpoints-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.rewardpoints-confirmation-module{
+	color: $sc-color-success;
+	text-transform: capitalize;
+}

@@ -1,0 +1,80 @@
+{
+	"name": "SearchForAddressInCheckout",
+	"fantasyName": "Search For Address In Checkout",
+	"vendor": "Acme",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Search For Address In Checkout",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/SearchForAddressInCheckout.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/SearchForAddressInCheckout/Configuration/SearchForAddressInCheckout.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/SearchForAddressInCheckout/Templates/acme_searchforaddressincheckout_searchforaddressincheckout.tpl",
+					"Modules/SearchForAddressInCheckout/Templates/order_wizard_module_searchForAddress.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/SearchForAddressInCheckout/Sass/_searchforaddressincheckout-searchforaddressincheckout.scss"
+		},
+		"files": [
+			"Modules/SearchForAddressInCheckout/Sass/_searchforaddressincheckout-searchforaddressincheckout.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/SearchForAddressInCheckout/JavaScript/Acme.SearchForAddressInCheckout.SearchForAddressInCheckout.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/SearchForAddressInCheckout/JavaScript/Acme.SearchForAddressInCheckout.SearchForAddressInCheckout.js",
+					"Modules/SearchForAddressInCheckout/JavaScript/SearchForAddressInCheckout.View.js",
+					"Modules/SearchForAddressInCheckout/JavaScript/Acme.SearchForAddressInCheckout.SearchForAddressInCheckout.Model.js",
+					"Modules/SearchForAddressInCheckout/JavaScript/Acme.SearchForAddressInCheckout.SearchForAddressInCheckout.SS2Model.js",
+					"Modules/SearchForAddressInCheckout/JavaScript/OrderWizardModuleSearchForAddress.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/SearchForAddressInCheckout/SuiteScript/Acme.SearchForAddressInCheckout.SearchForAddressInCheckout.js",
+		"files": [
+			"Modules/SearchForAddressInCheckout/SuiteScript/Acme.SearchForAddressInCheckout.SearchForAddressInCheckout.js",
+			"Modules/SearchForAddressInCheckout/SuiteScript/SearchForAddressInCheckout.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/SearchForAddressInCheckout/SuiteScript2/SearchForAddressInCheckout.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Acme/SearchForAddressInCheckout@1.0.0",
+	"activation_id": "15",
+	"extension_id": "14712"
+}

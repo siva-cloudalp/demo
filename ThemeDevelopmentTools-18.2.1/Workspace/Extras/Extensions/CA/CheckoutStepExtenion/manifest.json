@@ -1,0 +1,81 @@
+{
+	"name": "CheckoutStepExtenion",
+	"fantasyName": "Checkout Step Extenion",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Adding checkout step",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CheckoutStepModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/CheckoutStepModule/Configuration/CheckoutStepModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/CheckoutStepModule/Templates/ca_checkoutstepextenion_checkoutstepmodule.tpl",
+					"Modules/CheckoutStepModule/Templates/order_wizard_module_payingwith.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/CheckoutStepModule/Sass/_checkoutstepextenion-checkoutstepmodule.scss"
+		},
+		"files": [
+			"Modules/CheckoutStepModule/Sass/_checkoutstepextenion-checkoutstepmodule.scss",
+			"Modules/CheckoutStepModule/Sass/_order-wizard-module-payingwith.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/CheckoutStepModule/JavaScript/CA.CheckoutStepExtenion.CheckoutStepModule.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/CheckoutStepModule/JavaScript/CA.CheckoutStepExtenion.CheckoutStepModule.js",
+					"Modules/CheckoutStepModule/JavaScript/CheckoutStepModule.View.js",
+					"Modules/CheckoutStepModule/JavaScript/CA.CheckoutStepExtenion.CheckoutStepModule.Model.js",
+					"Modules/CheckoutStepModule/JavaScript/CA.CheckoutStepExtenion.CheckoutStepModule.SS2Model.js",
+					"Modules/CheckoutStepModule/JavaScript/OrderWizardModulePayingWithStep.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CheckoutStepModule/SuiteScript/CA.CheckoutStepExtenion.CheckoutStepModule.js",
+		"files": [
+			"Modules/CheckoutStepModule/SuiteScript/CA.CheckoutStepExtenion.CheckoutStepModule.js",
+			"Modules/CheckoutStepModule/SuiteScript/CheckoutStepModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/CheckoutStepModule/SuiteScript2/CheckoutStepModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/CheckoutStepExtenion@1.0.0",
+	"activation_id": "15",
+	"extension_id": "14012"
+}

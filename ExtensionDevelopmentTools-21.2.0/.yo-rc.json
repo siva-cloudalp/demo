@@ -1,0 +1,26 @@
+{
+  "generator-extension": {
+    "ext_application": {
+      "RewardPoints": [
+        "myaccount",
+        "checkout"
+      ],
+      "RedeemPoints": [
+        "checkout"
+      ],
+      "Certificates": [
+        "myaccount"
+      ],
+      "HeaderMenuMyaccount": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "Password": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ]
+    }
+  }
+}

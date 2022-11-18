@@ -1,0 +1,55 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.searchforaddressincheckout-info-card {
+    @extend .info-card;
+}
+
+.searchforaddressincheckout-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+.table-format-data-search-for-address {
+    // display: inline-block;
+    display: inline-grid;
+    display: -ms-inline-grid;
+    display: -moz-inline-grid;
+    margin-left: 40px;
+    background: whitesmoke;
+    width: 50%;
+}
+.table-format-content{
+	display: inline-flex;
+}
+.custom-radio-button{
+	width: 0 !important;
+	border: 0 !important;
+}
+.custom-add-address-link {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+  }
+  .plus-font{
+    @extend .fa;	
+	@extend %fa-plus;
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  .content-add-address{
+      display: inline-flex;
+      align-items: center;
+      p{
+        padding-left: 10px;
+        font-size: 16px !important;
+        text-transform: capitalize;
+      }
+  }

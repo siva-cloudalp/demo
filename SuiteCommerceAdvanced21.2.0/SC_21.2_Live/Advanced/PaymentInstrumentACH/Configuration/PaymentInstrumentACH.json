@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "paymentInstrumentAch",
+        "title": "Payment Instrument ACH",
+        "docRef": "section_162617211993",
+        "description": "Payment Instrument ACH",
+        "group": "myAccountApp"
+    }
+    ,
+    "properties": {
+        "paymentInstrumentACHEnabled": {
+            "group": "myAccountApp",
+            "subtab": "paymentInstrumentAch",
+            "type": "boolean",
+            "title": "Enable ACH Payments",
+            "description": "Check this box to enable ACH Payments for your site.",
+            "default": false
+        }
+    }
+}

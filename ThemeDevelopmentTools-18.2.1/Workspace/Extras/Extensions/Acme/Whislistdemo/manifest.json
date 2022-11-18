@@ -1,0 +1,78 @@
+{
+	"name": "Whislistdemo",
+	"fantasyName": "demowhislist",
+	"vendor": "Acme",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "testing in demo ",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/Whislistexpo.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Whislistexpo/Configuration/Whislistexpo.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/Whislistexpo/Templates/acme_whislistdemo_whislistexpo.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/Whislistexpo/Sass/_whislistdemo-whislistexpo.scss"
+		},
+		"files": [
+			"Modules/Whislistexpo/Sass/_whislistdemo-whislistexpo.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/Whislistexpo/JavaScript/Acme.Whislistdemo.Whislistexpo.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/Whislistexpo/JavaScript/Acme.Whislistdemo.Whislistexpo.js",
+					"Modules/Whislistexpo/JavaScript/Whislistexpo.View.js",
+					"Modules/Whislistexpo/JavaScript/Acme.Whislistdemo.Whislistexpo.Model.js",
+					"Modules/Whislistexpo/JavaScript/Acme.Whislistdemo.Whislistexpo.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Whislistexpo/SuiteScript/Acme.Whislistdemo.Whislistexpo.js",
+		"files": [
+			"Modules/Whislistexpo/SuiteScript/Acme.Whislistdemo.Whislistexpo.js",
+			"Modules/Whislistexpo/SuiteScript/Whislistexpo.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/Whislistexpo/SuiteScript2/Whislistexpo.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Acme/Whislistdemo@1.0.0",
+	"activation_id": "15",
+	"extension_id": "14612"
+}

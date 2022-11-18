@@ -1,0 +1,62 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.addtocomparemodule-info-card {
+    @extend .info-card;
+}
+
+.addtocomparemodule-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.product-details-full-content{
+	.cart-detailed-recently-viewed{
+		.product_comparison_view{
+			display: none;
+		}
+	}
+}
+
+.sc-item-comparison-widget-container.shown {
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	max-height: 500px;
+}
+
+.sc-item-comparison-widget-container {
+	padding:0 30px;
+	background-color: #fff;
+	border-top: 1px solid #505759;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 9998;
+	color: #505759;
+	bottom: 0;
+	max-height: 0;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	@media(max-width:767px){
+		p{
+			margin-bottom: 10px;
+			font-size:18px;
+			font-weight:bold;
+		}
+	}
+	.product-details-full-comp-btn{
+		@extend .btn-primary;
+		@extend .button-large;
+		float: right;
+		margin-bottom: 20px;
+	}
+}
+

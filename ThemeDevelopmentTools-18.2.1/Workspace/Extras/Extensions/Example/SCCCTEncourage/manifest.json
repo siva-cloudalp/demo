@@ -1,0 +1,119 @@
+{
+	"name": "SCCCTEncourage",
+	"fantasyName": "SCCCTEncourage",
+	"vendor": "Example",
+	"type": "extension",
+	"cct": {
+		"icon": "img/cct_example_sccctencourage_icon.svg",
+		"settings_record": "customrecordcct_example_sccctencourage",
+		"registercct_id": "cct_example_sccctencourage"
+	},
+	"target": "SCS,SCA",
+	"target_version": {
+		"SCS": ">=21.1.0",
+		"SCA": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Encourage shoppers to buy products of a certain color",
+	"assets": {
+		"img": {
+			"files": [
+				"img/buyorange.png",
+				"img/cct_example_sccctencourage_icon.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/Encourage.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Encourage/Configuration/Encourage.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Encourage/Templates/example_sccctencourage_encourage.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Encourage/Templates/example_sccctencourage_encourage.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Encourage/Templates/example_sccctencourage_encourage.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Encourage/Sass/_sccctencourage-encourage.scss",
+			"myaccount": "Modules/Encourage/Sass/_sccctencourage-encourage.scss",
+			"checkout": "Modules/Encourage/Sass/_sccctencourage-encourage.scss"
+		},
+		"files": [
+			"Modules/Encourage/Sass/_sccctencourage-encourage.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.js",
+			"myaccount": "Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.js",
+			"checkout": "Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.js",
+					"Modules/Encourage/JavaScript/Encourage.View.js",
+					"Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.Model.js",
+					"Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.SS2Model.js",
+					"Modules/jquery.slick/javascript/slick.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.js",
+					"Modules/Encourage/JavaScript/Encourage.View.js",
+					"Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.Model.js",
+					"Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.SS2Model.js",
+					"Modules/jquery.slick/javascript/slick.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.js",
+					"Modules/Encourage/JavaScript/Encourage.View.js",
+					"Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.Model.js",
+					"Modules/Encourage/JavaScript/Example.SCCCTEncourage.Encourage.SS2Model.js",
+					"Modules/jquery.slick/javascript/slick.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Encourage/SuiteScript/Example.SCCCTEncourage.Encourage.js",
+		"files": [
+			"Modules/Encourage/SuiteScript/Example.SCCCTEncourage.Encourage.js",
+			"Modules/Encourage/SuiteScript/Encourage.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/Encourage/SuiteScript2/Encourage.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Example/SCCCTEncourage@1.0.0",
+	"activation_id": "15",
+	"extension_id": "11312"
+}

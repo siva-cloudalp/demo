@@ -1,0 +1,114 @@
+{
+	"name": "CustomQuote",
+	"fantasyName": "Custom Quote",
+	"vendor": "CQ",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "My cool extension does magic!",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CustomQuoteModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/CustomQuoteModule/Configuration/CustomQuoteModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CustomQuoteModule/Templates/cq_customquote_customquotemodule.tpl",
+					"Modules/CustomQuoteModule/Templates/cq_customquote_customquoteemail.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/CustomQuoteModule/Templates/cq_customquote_customquotemodule.tpl",
+					"Modules/CustomQuoteModule/Templates/cq_customquote_customquoteemail.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CustomQuoteModule/Templates/cq_customquote_customquotemodule.tpl",
+					"Modules/CustomQuoteModule/Templates/cq_customquote_customquoteemail.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/CustomQuoteModule/Sass/_customquote-customquotemodule.scss",
+			"myaccount": "Modules/CustomQuoteModule/Sass/_customquote-customquotemodule.scss",
+			"checkout": "Modules/CustomQuoteModule/Sass/_customquote-customquotemodule.scss"
+		},
+		"files": [
+			"Modules/CustomQuoteModule/Sass/_customquote-customquotemodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.js",
+			"myaccount": "Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.js",
+			"checkout": "Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.js",
+					"Modules/CustomQuoteModule/JavaScript/CustomQuoteModule.View.js",
+					"Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.Model.js",
+					"Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.SS2Model.js",
+					"Modules/CustomQuoteModule/JavaScript/customQuoteEmail.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.js",
+					"Modules/CustomQuoteModule/JavaScript/CustomQuoteModule.View.js",
+					"Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.Model.js",
+					"Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.SS2Model.js",
+					"Modules/CustomQuoteModule/JavaScript/customQuoteEmail.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.js",
+					"Modules/CustomQuoteModule/JavaScript/CustomQuoteModule.View.js",
+					"Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.Model.js",
+					"Modules/CustomQuoteModule/JavaScript/CQ.CustomQuote.CustomQuoteModule.SS2Model.js",
+					"Modules/CustomQuoteModule/JavaScript/customQuoteEmail.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CustomQuoteModule/SuiteScript/CQ.CustomQuote.CustomQuoteModule.js",
+		"files": [
+			"Modules/CustomQuoteModule/SuiteScript/CQ.CustomQuote.CustomQuoteModule.js",
+			"Modules/CustomQuoteModule/SuiteScript/CustomQuoteModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/CustomQuoteModule/SuiteScript2/CustomQuoteModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CQ/CustomQuote@1.0.0",
+	"activation_id": "15",
+	"extension_id": "15612"
+}

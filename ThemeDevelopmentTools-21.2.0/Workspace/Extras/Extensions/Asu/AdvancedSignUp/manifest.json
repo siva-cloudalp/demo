@@ -1,0 +1,94 @@
+{
+	"name": "AdvancedSignUp",
+	"fantasyName": "Advanced Sign Up",
+	"vendor": "Asu",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "My cool extension does magic!",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/AdvancedSignUpModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/AdvancedSignUpModule/Configuration/AdvancedSignUpModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/AdvancedSignUpModule/Templates/asu_advancedsignup_advancedsignupmodule.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/AdvancedSignUpModule/Templates/asu_advancedsignup_advancedsignupmodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/AdvancedSignUpModule/Sass/_advancedsignup-advancedsignupmodule.scss",
+			"checkout": "Modules/AdvancedSignUpModule/Sass/_advancedsignup-advancedsignupmodule.scss"
+		},
+		"files": [
+			"Modules/AdvancedSignUpModule/Sass/_advancedsignup-advancedsignupmodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/AdvancedSignUpModule/JavaScript/Asu.AdvancedSignUp.AdvancedSignUpModule.js",
+			"checkout": "Modules/AdvancedSignUpModule/JavaScript/Asu.AdvancedSignUp.AdvancedSignUpModule.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/AdvancedSignUpModule/JavaScript/Asu.AdvancedSignUp.AdvancedSignUpModule.js",
+					"Modules/AdvancedSignUpModule/JavaScript/AdvancedSignUpModule.View.js",
+					"Modules/AdvancedSignUpModule/JavaScript/Asu.AdvancedSignUp.AdvancedSignUpModule.Model.js",
+					"Modules/AdvancedSignUpModule/JavaScript/Asu.AdvancedSignUp.AdvancedSignUpModule.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/AdvancedSignUpModule/JavaScript/Asu.AdvancedSignUp.AdvancedSignUpModule.js",
+					"Modules/AdvancedSignUpModule/JavaScript/AdvancedSignUpModule.View.js",
+					"Modules/AdvancedSignUpModule/JavaScript/Asu.AdvancedSignUp.AdvancedSignUpModule.Model.js",
+					"Modules/AdvancedSignUpModule/JavaScript/Asu.AdvancedSignUp.AdvancedSignUpModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/AdvancedSignUpModule/SuiteScript/Asu.AdvancedSignUp.AdvancedSignUpModule.js",
+		"files": [
+			"Modules/AdvancedSignUpModule/SuiteScript/Asu.AdvancedSignUp.AdvancedSignUpModule.js",
+			"Modules/AdvancedSignUpModule/SuiteScript/AdvancedSignUpModule.ServiceController.js",
+			"Modules/AdvancedSignUpModule/SuiteScript/Asu.model.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/AdvancedSignUpModule/SuiteScript2/AdvancedSignUpModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Asu/AdvancedSignUp@1.0.0",
+	"activation_id": "15",
+	"extension_id": "16612"
+}

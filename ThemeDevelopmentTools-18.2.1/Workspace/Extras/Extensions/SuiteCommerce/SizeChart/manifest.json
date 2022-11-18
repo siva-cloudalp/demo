@@ -1,0 +1,87 @@
+{
+	"name": "SizeChart",
+	"fantasyName": "Size Chart",
+	"vendor": "SuiteCommerce",
+	"version": "1.0.2",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "The SuiteCommerce Size Chart extension lets you add a size chart to your web store, allowing shoppers to view sizing in their preferred unit of measurement.",
+	"skins": [],
+	"assets": {
+		"services": {
+			"files": [
+				"services/SuiteCommerce.SizeChart.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Common/Configuration/SizeChartSubtab.Configuration.json",
+			"Modules/PDP/Configuration/PDP.Configuration.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_suitecommerce-sizechart-shopping.scss"
+		},
+		"files": [
+			"Modules/Chart/Sass/_suitecommerce-sizechart-chart.scss",
+			"Modules/Main/Sass/_suitecommerce-sizechart-shopping.scss",
+			"Modules/PDP/Sass/_suitecommerce-sizechart-pdp.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PDP/Templates/suite_commerce_size_chart_pdp.tpl",
+					"Modules/Chart/Templates/suitecommerce_sizechart_chart.tpl",
+					"Modules/Chart/Templates/suitecommerce_sizechart_page.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.SizeChart.Shopping.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.SizeChart.Shopping.js",
+					"Modules/Chart/JavaScript/Chart.Collection.js",
+					"Modules/Chart/JavaScript/Chart.Model.js",
+					"Modules/Chart/JavaScript/Chart.Page.Model.js",
+					"Modules/Chart/JavaScript/Chart.Page.View.js",
+					"Modules/Chart/JavaScript/Chart.Router.js",
+					"Modules/Chart/JavaScript/Chart.View.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/PDP/JavaScript/PDP.Configuration.js",
+					"Modules/PDP/JavaScript/PDP.Item.Model.js",
+					"Modules/PDP/JavaScript/PDP.js",
+					"Modules/PDP/JavaScript/PDP.View.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js",
+					"Modules/Common/JavaScript/DependencyProvider.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Chart/SuiteScript/Chart.js",
+		"files": [
+			"Modules/Chart/SuiteScript/Chart.js",
+			"Modules/Chart/SuiteScript/Chart.Model.js",
+			"Modules/Chart/SuiteScript/Chart.ServiceController.js"
+		]
+	},
+	"local_folder": "Workspace\\SizeChart",
+	"path": "SuiteScripts/extensions/SuiteCommerce/SizeChart@1.0.2",
+	"activation_id": "15",
+	"extension_id": "2112"
+}

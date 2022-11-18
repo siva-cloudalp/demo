@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "RewardPoints.config": {
+            "group": "extensions",
+            "subtab": "RewardPoints_subtab",
+            "type": "integer",
+            "title": "RewardPoints_Title",
+            "description": "Enter the number of months you want all reward points to remain valid after initial submittal. All the earning points from the web store use the same configurable expiration, in months. After this time expires, the points can no longer become a apply.",
+            "default": 3
+        }
+    }
+}

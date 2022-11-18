@@ -1,0 +1,108 @@
+{
+    "name": "Certificates",
+    "fantasyName": "Certificates",
+    "vendor": "CloudAlp",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "version": "1.0.0",
+    "description": "This certificates extension work based on customer and contact related to the customer ",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/Certificates.Service.ss",
+                "services/MyAccountMenu.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Configuration/Certificates.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Certificates/Templates/cloudalp_certificates_certificates.tpl",
+                    "Modules/Certificates/Templates/cloudalp_certificates_reset_password.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Certificates/Templates/cloudalp_certificates_certificates.tpl",
+                    "Modules/Certificates/Templates/cloudalp_certificates_reset_password.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Certificates/Templates/cloudalp_certificates_certificates.tpl",
+                    "Modules/Certificates/Templates/cloudalp_certificates_reset_password.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/Certificates/Sass/_certificates-certificates.scss",
+            "shopping": "Modules/Certificates/Sass/_certificates-certificates.scss",
+            "checkout": "Modules/Certificates/Sass/_certificates-certificates.scss"
+        },
+        "files": [
+            "Modules/Certificates/Sass/_certificates-certificates.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Certificates/JavaScript/CloudAlp.Certificates.Certificates.js",
+            "myaccount": "Modules/Certificates/JavaScript/CloudAlp.Certificates.Certificates.js",
+            "checkout": "Modules/Certificates/JavaScript/CloudAlp.Certificates.Certificates.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Certificates/JavaScript/CloudAlp.Certificates.Certificates.js",
+                    "Modules/Certificates/JavaScript/Certificates.View.js",
+                    "Modules/Certificates/JavaScript/CloudAlp.Certificates.Certificates.Model.js",
+                    "Modules/Certificates/JavaScript/ResetPassword.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Certificates/JavaScript/CloudAlp.Certificates.Certificates.js",
+                    "Modules/Certificates/JavaScript/Certificates.View.js",
+                    "Modules/Certificates/JavaScript/CloudAlp.Certificates.Certificates.Model.js",
+                    "Modules/Certificates/JavaScript/ResetPassword.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Certificates/JavaScript/CloudAlp.Certificates.Certificates.js",
+                    "Modules/Certificates/JavaScript/Certificates.View.js",
+                    "Modules/Certificates/JavaScript/CloudAlp.Certificates.Certificates.Model.js",
+                    "Modules/Certificates/JavaScript/ResetPassword.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Certificates/SuiteScript/CloudAlp.Certificates.Certificates.js",
+        "files": [
+            "Modules/Certificates/SuiteScript/CloudAlp.Certificates.Certificates.js",
+            "Modules/Certificates/SuiteScript/Certificates.ServiceController.js",
+            "Modules/Certificates/SuiteScript/Certificates.Model.js"
+        ]
+    },
+    "suitescript2": {
+        "files": []
+    }
+}

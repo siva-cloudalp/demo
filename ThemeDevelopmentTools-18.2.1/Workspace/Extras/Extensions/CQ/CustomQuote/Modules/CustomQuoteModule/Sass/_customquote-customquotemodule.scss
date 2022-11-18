@@ -1,0 +1,239 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.customquotemodule-info-card {
+    @extend .info-card;
+	// padding: 0px 190px;
+	
+	// width: 1170px;
+	// margin-right: auto;
+	// margin-left: auto;
+	// padding-left: 15px;
+    // padding-right: 15px;
+}
+
+.customquotemodule-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+h1{
+	color: #222426;
+    font-family: "Roboto","Lato","Helvetica Neue","Calibri",Helvetica,Arial,sans-serif;
+    font-size: 1.47rem;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.title-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.validitydate{
+	margin-bottom: 1.3em;
+}
+.subtext-cotainer{
+	margin-bottom: 1em;
+}
+
+.table-container{
+	margin: 2em 0;
+    width: 100%;
+}
+
+.list-nav{
+	width: 100%;
+}
+
+.ul-title{
+    display:flex;
+    align-items:center;
+    // justify-content:space-around;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    // color: gray;
+    // background: lightgray;
+    padding: 10px 0px;
+
+}
+.items-container{
+	display: flex;
+	justify-content: space-around;
+}
+
+.ul-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+}
+
+.ul-itemsop{
+	min-width: 50vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	// width: 100px;
+}
+
+.item-cls{
+	width:100px;
+	text-align: center;
+}
+.total-container{
+	width: 30vw;
+	float: right;
+	display: flex;
+	justify-content: space-around;
+}
+.sub-options-titles{
+	display:grid;
+	place-items: center;
+}
+.sub-options-values{
+	display:grid;
+	place-items: center;
+}
+.below-total{
+	float: right;
+	margin-right: 15%;
+	clear: both;
+	margin-bottom: 2em;
+}
+
+.notes-container{
+	clear: both;
+
+.fine-print p{
+		font-size: .75em;
+	}
+	
+ p{
+		margin-bottom: 1em;
+	}
+	
+	p{
+		font-family: "Lato","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 1rem;
+		font-style: normal;
+		line-height: 1.6;
+		letter-spacing: 0;
+		color: #4D5256;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.notes-container p{
+	margin-bottom: 1em;
+}
+
+.btn-quote{
+	border: purple solid 1px;
+	margin-top: $sc-margin-lv3;
+	padding: 20px 35px;
+    font-size: 1.067rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+	color: purple;
+	border-radius: 50px;
+    background-color: transparent;
+}
+
+.btn-quote:active, .btn-quote:hover{
+	background-color: purple;
+	color: white;
+}
+
+.send-container{
+	width: 100%;
+	display: flex;
+	justify-content: end;
+}
+.sendquote{
+	background-color: purple;
+	color: white !important;
+	border-radius: 50px;
+	margin-top: $sc-margin-lv3;
+	padding: 20px 35px;
+    font-size: 1.067rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+	float: right;
+}
+.epbtn{
+	font-size: 16px;
+    padding: 15px 25px;
+    margin: 5px;
+}
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 2em;
+  }
+  
+  tr {
+	border-bottom: 1pt solid lightgray;
+  }
+
+th{
+	padding: 5px 0px;
+}
+
+td{
+	padding: 5px 0px;
+}
+  .clmspan{
+	  text-align: end;
+  }
+
+  .firstcol{
+	  width:40%;
+  }
+
+//=====>notes
+
+// .ul-item{
+//     display:flex;
+//     align-items:center;
+// 	justify-content: center;
+//     text-transform: capitalize;
+//     font-size: 1.2rem;
+//     color: gray;
+//     background: lightgray;
+//     padding: 10px 0px;
+// 	width: 30%;
+
+// }
+
+// .ul-itemsop{
+// 	display:flex;
+// 	align-items:center;
+// 	justify-content:space-evenly;
+// 	text-transform: capitalize;
+// 	font-size: 1.2rem;
+// 	color: gray;
+// 	background: lightgray;
+// 	padding: 10px 0px;
+// 	width: 70%;
+
+// }

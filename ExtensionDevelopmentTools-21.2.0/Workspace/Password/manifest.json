@@ -1,0 +1,102 @@
+{
+    "name": "Password",
+    "fantasyName": "Staxs reset and update password.",
+    "vendor": "STAXS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": ">=21.1.0",
+        "SCA": ">=21.1.0"
+    },
+    "description": "password reset and update password ",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/ResetAndUpdatePassword.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ResetAndUpdatePassword/Configuration/ResetAndUpdatePassword.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ResetAndUpdatePassword/Sass/_password-resetandupdatepassword.scss",
+            "myaccount": "Modules/ResetAndUpdatePassword/Sass/_password-resetandupdatepassword.scss",
+            "checkout": "Modules/ResetAndUpdatePassword/Sass/_password-resetandupdatepassword.scss"
+        },
+        "files": [
+            "Modules/ResetAndUpdatePassword/Sass/_password-resetandupdatepassword.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ResetAndUpdatePassword/Templates/staxs_password_resetandupdatepassword.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ResetAndUpdatePassword/Templates/staxs_password_resetandupdatepassword.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ResetAndUpdatePassword/Templates/staxs_password_resetandupdatepassword.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ResetAndUpdatePassword/JavaScript/STAXS.Password.ResetAndUpdatePassword.js",
+            "myaccount": "Modules/ResetAndUpdatePassword/JavaScript/STAXS.Password.ResetAndUpdatePassword.js",
+            "checkout": "Modules/ResetAndUpdatePassword/JavaScript/STAXS.Password.ResetAndUpdatePassword.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ResetAndUpdatePassword/JavaScript/STAXS.Password.ResetAndUpdatePassword.js",
+                    "Modules/ResetAndUpdatePassword/JavaScript/ResetAndUpdatePassword.View.js",
+                    "Modules/ResetAndUpdatePassword/JavaScript/STAXS.Password.ResetAndUpdatePassword.Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ResetAndUpdatePassword/JavaScript/STAXS.Password.ResetAndUpdatePassword.js",
+                    "Modules/ResetAndUpdatePassword/JavaScript/ResetAndUpdatePassword.View.js",
+                    "Modules/ResetAndUpdatePassword/JavaScript/STAXS.Password.ResetAndUpdatePassword.Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ResetAndUpdatePassword/JavaScript/STAXS.Password.ResetAndUpdatePassword.js",
+                    "Modules/ResetAndUpdatePassword/JavaScript/ResetAndUpdatePassword.View.js",
+                    "Modules/ResetAndUpdatePassword/JavaScript/STAXS.Password.ResetAndUpdatePassword.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ResetAndUpdatePassword/SuiteScript/STAXS.Password.ResetAndUpdatePassword.js",
+        "files": [
+            "Modules/ResetAndUpdatePassword/SuiteScript/STAXS.Password.ResetAndUpdatePassword.js",
+            "Modules/ResetAndUpdatePassword/SuiteScript/ResetAndUpdatePassword.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\Password",
+    "suitescript2": {
+        "files": []
+    }
+}

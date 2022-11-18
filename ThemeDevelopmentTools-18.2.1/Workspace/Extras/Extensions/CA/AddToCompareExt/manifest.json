@@ -1,0 +1,115 @@
+{
+	"name": "AddToCompareExt",
+	"fantasyName": "AddToCompareExt",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Add to compare functionality for related and correlated items",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/AddToCompareModule.Service.ss",
+				"services/AddToCompareRouter.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/AddToCompareModule/Configuration/AddToCompareModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/AddToCompareModule/Templates/ca_addtocompareext_addtocomparemodule.tpl",
+					"Modules/AddToCompareModule/Templates/ca_addtocompareext_addtocomparerouter.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/AddToCompareModule/Templates/ca_addtocompareext_addtocomparemodule.tpl",
+					"Modules/AddToCompareModule/Templates/ca_addtocompareext_addtocomparerouter.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/AddToCompareModule/Templates/ca_addtocompareext_addtocomparemodule.tpl",
+					"Modules/AddToCompareModule/Templates/ca_addtocompareext_addtocomparerouter.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/AddToCompareModule/Sass/_addtocompareext-addtocomparemodule.scss",
+			"myaccount": "Modules/AddToCompareModule/Sass/_addtocompareext-addtocomparemodule.scss",
+			"checkout": "Modules/AddToCompareModule/Sass/_addtocompareext-addtocomparemodule.scss"
+		},
+		"files": [
+			"Modules/AddToCompareModule/Sass/_addtocompareext-addtocomparemodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.js",
+			"myaccount": "Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.js",
+			"checkout": "Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.js",
+					"Modules/AddToCompareModule/JavaScript/AddToCompareModule.View.js",
+					"Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.Model.js",
+					"Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.SS2Model.js",
+					"Modules/AddToCompareModule/JavaScript/AddToCompareRouter.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.js",
+					"Modules/AddToCompareModule/JavaScript/AddToCompareModule.View.js",
+					"Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.Model.js",
+					"Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.SS2Model.js",
+					"Modules/AddToCompareModule/JavaScript/AddToCompareRouter.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.js",
+					"Modules/AddToCompareModule/JavaScript/AddToCompareModule.View.js",
+					"Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.Model.js",
+					"Modules/AddToCompareModule/JavaScript/CA.AddToCompareExt.AddToCompareModule.SS2Model.js",
+					"Modules/AddToCompareModule/JavaScript/AddToCompareRouter.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/AddToCompareModule/SuiteScript/CA.AddToCompareExt.AddToCompareModule.js",
+		"files": [
+			"Modules/AddToCompareModule/SuiteScript/CA.AddToCompareExt.AddToCompareModule.js",
+			"Modules/AddToCompareModule/SuiteScript/AddToCompareModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/AddToCompareModule/SuiteScript2/AddToCompareModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/AddToCompareExt@1.0.0",
+	"activation_id": "15",
+	"extension_id": "13612"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "RedeemPoints.config": {
+            "group": "extensions",
+            "subtab": "RedeemPoints_subtab",
+            "type": "string",
+            "title": "RedeemPoints_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

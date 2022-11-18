@@ -1,0 +1,17 @@
+{
+    "credentials": {
+        "user_agent": "sc-theme-devtools/2021.2.0",
+        "authID": "demoproject",
+        "account": "TSTDRV1521025",
+        "hostname": "TSTDRV1521025.restlets.api.netsuite.com",
+        "website": 9,
+        "domain": "demo.cloudalp.com",
+        "webapp_id": "201357",
+        "ssp_folder": "201357",
+        "is_scis": false,
+        "target_folder": {
+            "parentId": "-15",
+            "folderName": "Deploy_Extensions"
+        }
+    }
+}

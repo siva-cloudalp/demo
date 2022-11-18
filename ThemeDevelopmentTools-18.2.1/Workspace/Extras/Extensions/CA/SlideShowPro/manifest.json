@@ -1,0 +1,92 @@
+{
+	"name": "SlideShowPro",
+	"fantasyName": "SlideShow Pro",
+	"vendor": "CA",
+	"type": "extension",
+	"cct": [
+		{
+			"icon": "img/featurecategories_icon.svg",
+			"settings_record": "customrecord_slideshow_pro_cct",
+			"registercct_id": "slide_show_cct_pro",
+			"label": "Feature Categories",
+			"description": "Adds feature Category via Site Management Tool"
+		}
+	],
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=19.2.0",
+		"SCS": ">=19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "Adds a slideshow to website",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SlideShowModule/Templates/cloudalp_slideshowpro_slideshowmodule.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/SlideShowModule/Templates/cloudalp_slideshowpro_slideshowmodule.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/SlideShowModule/Templates/cloudalp_slideshowpro_slideshowmodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/SlideShowModule/Sass/_slideshowpro-slideshowmodule.scss",
+			"myaccount": "Modules/SlideShowModule/Sass/_slideshowpro-slideshowmodule.scss",
+			"checkout": "Modules/SlideShowModule/Sass/_slideshowpro-slideshowmodule.scss"
+		},
+		"files": [
+			"Modules/SlideShowModule/Sass/_slideshowpro-slideshowmodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/SlideShowModule/JavaScript/Cloudalp.SlideShowPro.SlideShowModule.js",
+			"myaccount": "Modules/SlideShowModule/JavaScript/Cloudalp.SlideShowPro.SlideShowModule.js",
+			"checkout": "Modules/SlideShowModule/JavaScript/Cloudalp.SlideShowPro.SlideShowModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SlideShowModule/JavaScript/Cloudalp.SlideShowPro.SlideShowModule.js",
+					"Modules/SlideShowModule/JavaScript/SlideShowModule.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/SlideShowModule/JavaScript/Cloudalp.SlideShowPro.SlideShowModule.js",
+					"Modules/SlideShowModule/JavaScript/SlideShowModule.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/SlideShowModule/JavaScript/Cloudalp.SlideShowPro.SlideShowModule.js",
+					"Modules/SlideShowModule/JavaScript/SlideShowModule.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/SlideShowPro@1.0.0",
+	"activation_id": "15",
+	"extension_id": "3014"
+}

@@ -1,0 +1,93 @@
+{
+	"name": "RequestShippingAddress",
+	"fantasyName": "Request Shipping Address",
+	"vendor": "Demo",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "My cool extension does magic!",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/RequestShippingAddressModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/RequestShippingAddressModule/Configuration/RequestShippingAddressModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RequestShippingAddressModule/Templates/demo_requestshippingaddress_requestshippingaddressmodule.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/RequestShippingAddressModule/Templates/demo_requestshippingaddress_requestshippingaddressmodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/RequestShippingAddressModule/Sass/_requestshippingaddress-requestshippingaddressmodule.scss",
+			"myaccount": "Modules/RequestShippingAddressModule/Sass/_requestshippingaddress-requestshippingaddressmodule.scss"
+		},
+		"files": [
+			"Modules/RequestShippingAddressModule/Sass/_requestshippingaddress-requestshippingaddressmodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/RequestShippingAddressModule/JavaScript/Demo.RequestShippingAddress.RequestShippingAddressModule.js",
+			"myaccount": "Modules/RequestShippingAddressModule/JavaScript/Demo.RequestShippingAddress.RequestShippingAddressModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RequestShippingAddressModule/JavaScript/Demo.RequestShippingAddress.RequestShippingAddressModule.js",
+					"Modules/RequestShippingAddressModule/JavaScript/RequestShippingAddressModule.View.js",
+					"Modules/RequestShippingAddressModule/JavaScript/Demo.RequestShippingAddress.RequestShippingAddressModule.Model.js",
+					"Modules/RequestShippingAddressModule/JavaScript/Demo.RequestShippingAddress.RequestShippingAddressModule.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/RequestShippingAddressModule/JavaScript/Demo.RequestShippingAddress.RequestShippingAddressModule.js",
+					"Modules/RequestShippingAddressModule/JavaScript/RequestShippingAddressModule.View.js",
+					"Modules/RequestShippingAddressModule/JavaScript/Demo.RequestShippingAddress.RequestShippingAddressModule.Model.js",
+					"Modules/RequestShippingAddressModule/JavaScript/Demo.RequestShippingAddress.RequestShippingAddressModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/RequestShippingAddressModule/SuiteScript/Demo.RequestShippingAddress.RequestShippingAddressModule.js",
+		"files": [
+			"Modules/RequestShippingAddressModule/SuiteScript/Demo.RequestShippingAddress.RequestShippingAddressModule.js",
+			"Modules/RequestShippingAddressModule/SuiteScript/RequestShippingAddressModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/RequestShippingAddressModule/SuiteScript2/RequestShippingAddressModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Demo/RequestShippingAddress@1.0.0",
+	"activation_id": "15",
+	"extension_id": "17112"
+}

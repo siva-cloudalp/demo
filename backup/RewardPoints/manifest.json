@@ -1,0 +1,92 @@
+{
+    "name": "RewardPoints",
+    "fantasyName": "Reward Points",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": ">=21.2.0",
+        "SCA": ">=21.2.0"
+    },
+    "description": "RewardPoints",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/RewardPoints.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/RewardPoints/Configuration/RewardPoints.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/RewardPoints/Sass/_rewardpoints-rewardpoints.scss",
+            "checkout": "Modules/RewardPoints/Sass/_rewardpoints-rewardpoints.scss"
+        },
+        "files": [
+            "Modules/RewardPoints/Sass/_rewardpoints-rewardpoints.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/RewardPoints/Templates/ca_rewardpoints_rewardpoints.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/RewardPoints/Templates/ca_rewardpoints_rewardpoints.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/RewardPoints/JavaScript/CA.RewardPoints.RewardPoints.js",
+            "checkout": "Modules/RewardPoints/JavaScript/CA.RewardPoints.RewardPoints.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/RewardPoints/JavaScript/CA.RewardPoints.RewardPoints.js",
+                    "Modules/RewardPoints/JavaScript/RewardPoints.View.js",
+                    "Modules/RewardPoints/JavaScript/CA.RewardPoints.RewardPoints.SS2Model.js",
+                    "Modules/RewardPoints/JavaScript/CA.RewardPoints.RewardPoints.Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/RewardPoints/JavaScript/CA.RewardPoints.RewardPoints.js",
+                    "Modules/RewardPoints/JavaScript/RewardPoints.View.js",
+                    "Modules/RewardPoints/JavaScript/CA.RewardPoints.RewardPoints.SS2Model.js",
+                    "Modules/RewardPoints/JavaScript/CA.RewardPoints.RewardPoints.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/RewardPoints/SuiteScript/CA.RewardPoints.RewardPoints.js",
+        "files": [
+            "Modules/RewardPoints/SuiteScript/CA.RewardPoints.RewardPoints.js",
+            "Modules/RewardPoints/SuiteScript/RewardPoints.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\RewardPoints",
+    "suitescript2": {
+        "files": [
+            "Modules/RewardPoints/SuiteScript2/RewardPoints.Service.ss"
+        ]
+    }
+}

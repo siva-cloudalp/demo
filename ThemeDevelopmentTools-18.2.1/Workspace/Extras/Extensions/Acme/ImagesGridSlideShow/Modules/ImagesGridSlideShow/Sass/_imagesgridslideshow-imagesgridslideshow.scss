@@ -1,0 +1,56 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+@import "slick.scss";
+@import "slick-theme.scss";
+
+.imagesgridslideshow-info-card {
+    @extend .info-card;
+}
+
+.imagesgridslideshow-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+ 
+
+.slider {
+  width: 90%;
+  margin:20px auto;
+}
+
+.slick-slide {
+  margin: 0px 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-btn-section{
+  text-align:center;
+  margin-top:10px
+}
+// .slick-prev:before,
+// .slick-next:before {
+//   color: black;
+// }
+
+// .slick-slide {
+//   transition: all ease-in-out 0.3s;
+//   opacity: 0.2;
+// }
+
+// .slick-active {
+//   opacity: 0.5;
+// }
+
+// .slick-current {
+//   opacity: 1;
+// }

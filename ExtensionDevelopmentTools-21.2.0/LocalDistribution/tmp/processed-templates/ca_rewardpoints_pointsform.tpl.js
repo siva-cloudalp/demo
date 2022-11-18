@@ -1,0 +1,18 @@
+define('ca_rewardpoints_pointsform.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"isPoints") : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":2,"column":2},"end":{"line":33,"column":7}}})) != null ? stack1 : "");
+},"2":function(container,depth0,helpers,partials,data) {
+    var alias1=container.escapeExpression;
+
+  return "	<div class=\"points-form\">\n		<div class=\"points-form-expander-head\">\n			<a class=\"points-form-expander-head-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#points-form\" aria-expanded=\"false\" aria-controls=\"order-wizard-promocode\">\n				"
+    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Available Redeem points",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":6,"column":4},"end":{"line":6,"column":43}}}))
+    + " "
+    + alias1(container.lambda((depth0 != null ? compilerNameLookup(depth0,"availablePoints") : depth0), depth0))
+    + "\n				<i class=\"points-form-expander-toggle-icon\"></i>\n			</a>\n		</div>\n		<div class=\"points-form-expander-body collapse\" id=\"points-form\"  data-type=\"points-form-container\" data-action=\"show-points-form-container\" aria-expanded=\"false\" data-target=\"#points-form\" >\n			<div class=\"points-form-expander-container\">\n				<form class=\"points-code-form\" data-action=\"apply-points\">\n          <div class=\"points-form-summary-grid\">\n            <div class=\"points-form-summary-container-input\">\n              <div class=\"\">\n              <input type=\"text\" name=\"pointsform\" id=\"pointsform\" class=\"points-form-summary-input\" value=\"\">\n              </div>\n              </div>\n              <div class=\"points-form-summary-promocode-container-button\">\n    <button type=\"\" data-action=\"applyForm-points\" class=\"points-form-summary-button-apply-promocode\">\n				Apply\n			</button>\n      </div>\n      </div>\n      <div data-type=\"pointsform-error-placeholder\">\n      </div>\n      </form>\n			</div>\n		</div>\n	</div>\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"availablePoints") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":1},"end":{"line":34,"column":7}}})) != null ? stack1 : "")
+    + "\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/CA/RewardPoints/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/DemoCloudAlp/Suite_Commerce_Base_Theme/20.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'ca_rewardpoints_pointsform'; return template;});

@@ -1,0 +1,279 @@
+
+.slideshow-cct-container {
+  position: relative;
+  margin-bottom: $sc-margin-lv4;
+  margin-top: $sc-margin-lv4;
+  word-wrap: break-word;
+
+  @media (min-width: $screen-xs-min) {
+    margin-bottom: $sc-margin-lv1;
+  }
+  .bx-controls{
+	margin-top: -64px;
+  }
+  .slider-text{
+	font-size: 36px;
+	@media (max-width: $screen-xs-max) {
+		font-size:14px;
+		padding:$sc-padding-lv1;
+		margin-bottom: $sc-margin-lv2;
+	  }
+	margin-bottom: $sc-margin-lv4;
+	//font-weight:bold;
+	
+	//background-color: #fff;
+    //opacity: 0.8;
+    //padding: $sc-padding-lv3;
+    //text-align: center;
+  }
+  .bx-pager {
+    a {
+      color: #000 !important;
+      background-color: #000 !important;
+      width: 10px !important;
+      height: 10px !important;
+      border-radius: 100% !important;
+      font-size: 0;
+      text-indent: -9999px;
+    }
+    a.active {
+      background-color: $sc-color-primary !important;
+    }
+  }
+
+  .slideshow-prev-icon, .slideshow-next-icon {
+    position: absolute;
+    top: 40%;
+    width: $sc-target-size-mobile;
+    height: $sc-target-size-mobile;
+    font-size: 50px;
+    color: $sc-color-theme-500;
+  }
+
+  .slideshow-next-icon {
+    right: 15px;
+    text-align: right;
+    @extend .icon-angle-right;
+  }
+
+  .slideshow-prev-icon {
+    left: 15px;
+    @extend .icon-angle-left;
+  }
+
+  .content {
+    position: relative;
+
+    @media (max-width: $screen-xs-min) {
+      padding: 0;
+    }
+  }
+
+  .content-light {
+    background-color: #FFFFFF;
+  }
+
+  .content-dark {
+    background-color: #000000;
+  }
+
+  .crop-height {
+    max-width: 1600px;
+    min-height: 50px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  img.scale {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    -ms-interpolation-mode: bicubic;
+  }
+
+  .bg-image-wedding {
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    background-position: center center;
+    background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+  }
+
+  .bg-center-bottom {
+    background-position: center bottom;
+  }
+
+  .bg-center-top {
+    background-position: center top;
+  }
+
+  .bg-center-center {
+    background-position: center center;
+  }
+
+  .bg-position-wedding {
+    background-position: 30% 60%;
+  }
+
+  .content-box {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    border-style: groove;
+    width: 60%;
+
+    @media (max-width: $screen-xs-min) {
+      width: 90% !important;
+      left: 50% !important;
+      text-align: center !important;
+    }
+	
+	
+  }
+  .for-animate{
+	opacity: 0;
+	.button-container a{
+		opacity:0;
+	}
+	
+  }
+  
+	[aria-hidden="false"] .for-animate{
+		
+		opacity:1;
+		-webkit-animation: mymove 1.5s ease-in-out; /* Safari 4+ */
+		-moz-animation:    mymove 1.5s ease-in-out; /* Fx 5+ */
+		-o-animation:      mymove 1.5s ease-in-out; /* Opera 12+ */
+		animation:         mymove 1.5s ease-in-out; /* IE 10+, Fx 29+ */
+		animation-fill-mode: forwards;
+		@keyframes mymove {
+		  0%   {top: 30%;}
+		  100% 	{top:50%}
+		}
+	}
+	[aria-hidden="false"] .for-animate.content-box-center,[aria-hidden="false"] .for-animate.content-box-left{
+		.button-container a{
+			
+			-webkit-animation: mymove2 0.3s 1.5s ease-in-out; /* Safari 4+ */
+			-moz-animation:    mymove2 0.3s 1.5s ease-in-out; /* Fx 5+ */
+			-o-animation:      mymove2 0.3s 1.5s ease-in-out; /* Opera 12+ */
+			animation:         mymove2 0.3s 1.5s ease-in-out; /* IE 10+, Fx 29+ */
+			animation-fill-mode: forwards;
+			@keyframes mymove2 {
+			  0%   {margin-left: 10%; opacity:1;}
+			  100% 	{margin-left:0;opacity:1;}
+			}
+		}
+	}
+	[aria-hidden="false"] .for-animate.content-box-right{
+		.button-container a{
+			
+			-webkit-animation: mymove3 0.3s 1.5s ease-in-out; /* Safari 4+ */
+			-moz-animation:    mymove3 0.3s 1.5s ease-in-out; /* Fx 5+ */
+			-o-animation:      mymove3 0.3s 1.5s ease-in-out; /* Opera 12+ */
+			animation:         mymove3 0.3s 1.5s ease-in-out; /* IE 10+, Fx 29+ */
+			animation-fill-mode: forwards;
+			@keyframes mymove3 {
+			  0%   {margin-right: 10%; opacity:1;}
+			  100% 	{margin-right:0;opacity:1;}
+			}
+		}
+	}
+  .content-box-center {
+    left: 50%;
+    text-align: center;
+  }
+
+  .content-box-left {
+    left: 35%;
+    text-align: left;
+  }
+
+  .content-box-right {
+    right: -25%;
+    text-align: right;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  .transparent {
+    //zoom: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+
+  .image-opacity {
+    opacity: 0.7;
+  }
+
+  .content-color-text-light {
+    color: #fff;
+	text-shadow: 2px 2px #000;
+    p, h1, h2, h3, h4, h5, h6, blockquote, a {
+      color: #fff;
+    }
+  }
+
+  .content-color-text-dark {
+    color: #000;
+	text-shadow: 2px 2px #fff;
+    p, h1, h2, h3, h4, h5, h6, blockquote, a {
+      color: #000;
+    }
+  }
+
+  .text-content {
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    width: 100%;
+    margin-top: 0px;
+
+    @media (min-width: $screen-xs-min) {
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0px !important;
+      position: relative !important;
+      bottom: 0px;
+    }
+  }
+
+  .button-style-one {
+    @extend .button-primary;
+    @extend .button-large;
+    max-width: 100%;
+    @media (min-width: $screen-xs-min) {
+      width: auto;
+      position: relative;
+    }
+	@media (max-width: $screen-xs-max) {
+		padding: $sc-padding-lv2 $sc-padding-lv4;
+		width: auto;
+	}
+  }
+
+  .button-style-two {
+    @extend .button-secondary;
+    @extend .button-large;
+    max-width: 100%;
+	@media (max-width: $screen-xs-max) {
+		padding: $sc-padding-lv2 $sc-padding-lv4;
+		width: auto;
+	}
+    @media (min-width: $screen-xs-min) {
+      width: auto;
+      position: relative;
+    }
+  }
+
+}

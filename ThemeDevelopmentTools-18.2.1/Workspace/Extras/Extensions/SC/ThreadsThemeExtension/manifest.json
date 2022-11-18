@@ -1,0 +1,102 @@
+{
+	"name": "ThreadsThemeExtension",
+	"fantasyName": "Threads Theme Extension",
+	"vendor": "SC",
+	"version": "3.0.2",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCS": ">=18.1.0",
+		"SCA": ">=18.1.0"
+	},
+	"description": "Extension that adds extra configurable content to the Threads Theme",
+	"skins": [],
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/Configuration.json",
+			"Modules/Header/Configuration/Header.Configuration.json",
+			"Modules/Footer/Configuration/Footer.Configuration.json",
+			"Modules/Home/Configuration/Home.Configuration.json",
+			"Modules/WebFont/Configuration/Configuration.json",
+			"Modules/ErrorManagement/Configuration/ErrorManagementPageNotFound.Configuration.json",
+			"Modules/LoginRegister/Configuration/LoginRegister.Configuration.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Header/Templates/sc-threads-logo.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Header/Templates/sc-threads-logo.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Header/Templates/sc-threads-logo.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SC.ThreadsThemeExtension.Shopping.js",
+			"checkout": "Modules/Main/JavaScript/SC.ThreadsThemeExtension.Checkout.js",
+			"myaccount": "Modules/Main/JavaScript/SC.ThreadsThemeExtension.MyAccount.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SC.ThreadsThemeExtension.Shopping.js",
+					"Modules/Common/JavaScript/SC.ThreadsThemeExtension.Common.Configuration.js",
+					"Modules/Common/JavaScript/SC.ThreadsThemeExtension.Common.LayoutHelper.js",
+					"Modules/Header/JavaScript/SC.ThreadsThemeExtension.Header.js",
+					"Modules/Header/JavaScript/SC.ThreadsThemeExtension.HeaderLogo.js",
+					"Modules/Header/JavaScript/SC.ThreadsThemeExtension.LogoView.js",
+					"Modules/Footer/JavaScript/SC.ThreadsThemeExtension.Footer.js",
+					"Modules/Home/JavaScript/SC.ThreadsThemeExtension.Home.js",
+					"Modules/ItemRelations/JavaScript/SC.ThreadsThemeExtension.ItemRelations.SC.Configuration.js",
+					"Modules/WebFont/JavaScript/SC.ThreadsThemeExtension.LoadWebFont.js",
+					"Modules/ErrorManagement/JavaScript/SC.ThreadsThemeExtension.ErrorManagement.PageNotFound.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/SC.ThreadsThemeExtension.Checkout.js",
+					"Modules/Common/JavaScript/SC.ThreadsThemeExtension.Common.Configuration.js",
+					"Modules/Common/JavaScript/SC.ThreadsThemeExtension.Common.LayoutHelper.js",
+					"Modules/Header/JavaScript/SC.ThreadsThemeExtension.Header.js",
+					"Modules/Header/JavaScript/SC.ThreadsThemeExtension.HeaderLogo.js",
+					"Modules/Header/JavaScript/SC.ThreadsThemeExtension.LogoView.js",
+					"Modules/Footer/JavaScript/SC.ThreadsThemeExtension.Footer.js",
+					"Modules/Footer/JavaScript/SC.ThreadsThemeExtension.Footer.Simplified.js",
+					"Modules/ItemRelations/JavaScript/SC.ThreadsThemeExtension.ItemRelations.SC.Configuration.js",
+					"Modules/WebFont/JavaScript/SC.ThreadsThemeExtension.LoadWebFont.js",
+					"Modules/ErrorManagement/JavaScript/SC.ThreadsThemeExtension.ErrorManagement.PageNotFound.View.js",
+					"Modules/LoginRegister/JavaScript/SC.ThreadsThemeExtension.LoginRegister.Login.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/SC.ThreadsThemeExtension.MyAccount.js",
+					"Modules/Common/JavaScript/SC.ThreadsThemeExtension.Common.Configuration.js",
+					"Modules/Common/JavaScript/SC.ThreadsThemeExtension.Common.LayoutHelper.js",
+					"Modules/Header/JavaScript/SC.ThreadsThemeExtension.Header.js",
+					"Modules/Header/JavaScript/SC.ThreadsThemeExtension.HeaderLogo.js",
+					"Modules/Header/JavaScript/SC.ThreadsThemeExtension.LogoView.js",
+					"Modules/Footer/JavaScript/SC.ThreadsThemeExtension.Footer.js",
+					"Modules/ItemRelations/JavaScript/SC.ThreadsThemeExtension.ItemRelations.SC.Configuration.js",
+					"Modules/WebFont/JavaScript/SC.ThreadsThemeExtension.LoadWebFont.js",
+					"Modules/ErrorManagement/JavaScript/SC.ThreadsThemeExtension.ErrorManagement.PageNotFound.View.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace/ThreadsThemeExtension",
+	"path": "SuiteScripts/extensions/SC/com.netsuite.threadstheme/ThreadsThemeExtension@3.0.2",
+	"activation_id": "15",
+	"extension_id": "3512"
+}

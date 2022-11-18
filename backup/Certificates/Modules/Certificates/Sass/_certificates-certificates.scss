@@ -1,0 +1,36 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+// font-family: Arial narrow,Arial,sans-serif
+.certificates-info-card {
+    @extend .info-card;
+}
+
+.certificates-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.certificates-list{
+	margin-top:$sc-margin-lv8
+}
+.certificates-data{
+	margin:$sc-margin-lv1
+}
+.certificates-pdf-name{
+	padding-right:$sc-padding-lv2;
+	text-transform: capitalize
+}
+.certificates-link{
+	font-family:Arial narrow,Arial,sans-serif
+}
+.certificates-nodata-found {
+	justify-content: center;
+	display: flex;
+	margin-top: 20%;
+}

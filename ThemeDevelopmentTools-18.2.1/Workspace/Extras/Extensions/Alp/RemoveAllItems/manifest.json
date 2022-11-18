@@ -1,0 +1,70 @@
+{
+	"name": "RemoveAllItems",
+	"fantasyName": "RemoveAllItems",
+	"vendor": "Alp",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "In the cart page items greater then 0 user can delete all items with single click on button",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/RemoveAllItems.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RemoveAllItems/Templates/alp_removeallitems_removeallitems.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/RemoveAllItems/Sass/_removeallitems-removeallitems.scss"
+		},
+		"files": [
+			"Modules/RemoveAllItems/Sass/_removeallitems-removeallitems.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/RemoveAllItems/JavaScript/Alp.RemoveAllItems.RemoveAllItems.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RemoveAllItems/JavaScript/Alp.RemoveAllItems.RemoveAllItems.js",
+					"Modules/RemoveAllItems/JavaScript/RemoveAllItems.View.js",
+					"Modules/RemoveAllItems/JavaScript/Alp.RemoveAllItems.RemoveAllItems.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/RemoveAllItems/SuiteScript/Alp.RemoveAllItems.RemoveAllItems.js",
+		"files": [
+			"Modules/RemoveAllItems/SuiteScript/Alp.RemoveAllItems.RemoveAllItems.js",
+			"Modules/RemoveAllItems/SuiteScript/RemoveAllItems.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Alp/RemoveAllItems@1.0.0",
+	"activation_id": "15",
+	"extension_id": "14412"
+}

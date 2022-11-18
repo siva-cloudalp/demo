@@ -1,0 +1,12 @@
+{
+  "user_agent": "sc-devtools/21.2.0",
+  "authID": "demoproject",
+  "account": "TSTDRV1521025",
+  "hostname": "TSTDRV1521025.restlets.api.netsuite.com",
+  "target_folder": "201357",
+  "target_folder_ss2": {
+    "parent_id": "201358",
+    "folder_name": "Development2"
+  },
+  "product": "Advanced"
+}

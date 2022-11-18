@@ -1,0 +1,27 @@
+define('sc_advancedsignup_registrationform.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"1":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "    <div class=\"advancedsignup-registrationform-wrapper\">\n        <div class=\"advancedsignup-registrationform-form\">\n          <form>\n            <h2 class=\"advancedsignup-registrationform-title\">"
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"formTitle") || (depth0 != null ? compilerNameLookup(depth0,"formTitle") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"formTitle","hash":{},"data":data,"loc":{"start":{"line":8,"column":62},"end":{"line":8,"column":77}}}) : helper)))
+    + "</h2>\n            <p class=\"advancedsignup-registrationform-subtitle\">"
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"formSubTitle") || (depth0 != null ? compilerNameLookup(depth0,"formSubTitle") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"formSubTitle","hash":{},"data":data,"loc":{"start":{"line":9,"column":64},"end":{"line":9,"column":82}}}) : helper)))
+    + "</p>\n            <p class=\"advancedsignup-registrationform-message\" data-error-bin-message=\"\"></p>\n            <div data-view=\"RegistrationForm.Fields\"></div>\n            <button\n              type=\"submit\"\n              class=\"advancedsignup-registrationform-button\"\n              data-action=\"\">"
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"submitButtonLabel") || (depth0 != null ? compilerNameLookup(depth0,"submitButtonLabel") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"submitButtonLabel","hash":{},"data":data,"loc":{"start":{"line":15,"column":29},"end":{"line":15,"column":52}}}) : helper)))
+    + "</button>\n          </form>\n        </div>\n    </div>\n    <div class=\"advancedsignup-cmsarea-wrapper\">\n      <div class=\"advancedsignup-form-default-layout-cms-area\"\n         data-cms-area-filters=\"path\" data-cms-area=\"advancedsignup-form-cms-area-1\"></div>\n    </div>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function";
+
+  return "      <div class=\"advancedsignup-registrationform-message-success\">\n        <h2 class=\"advancedsignup-registrationform-message-text\">\n          "
+    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"confirmationTitle") || (depth0 != null ? compilerNameLookup(depth0,"confirmationTitle") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"confirmationTitle","hash":{},"data":data,"loc":{"start":{"line":26,"column":10},"end":{"line":26,"column":33}}}) : helper)))
+    + "\n        </h2>\n        <p class=\"advancedsignup-registrationform-message-text\">\n          "
+    + ((stack1 = ((helper = (helper = compilerNameLookup(helpers,"confirmationMessage") || (depth0 != null ? compilerNameLookup(depth0,"confirmationMessage") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"confirmationMessage","hash":{},"data":data,"loc":{"start":{"line":29,"column":10},"end":{"line":29,"column":37}}}) : helper))) != null ? stack1 : "")
+    + "\n        </p>\n      </div>\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "<section class=\"advancedsignup-registrationform-container\">\n  <h1 class=\"advancedsignup-registrationform-header\">"
+    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"formHeader") || (depth0 != null ? compilerNameLookup(depth0,"formHeader") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"formHeader","hash":{},"data":data,"loc":{"start":{"line":2,"column":53},"end":{"line":2,"column":69}}}) : helper)))
+    + "</h1>\n  <div class=\"advancedsignup-registrationform-body\">\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"displayForm") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data,"loc":{"start":{"line":4,"column":4},"end":{"line":32,"column":11}}})) != null ? stack1 : "")
+    + "  </div>\n</section>";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/SuiteCommerce/AdvancedSignUp/1.0.5/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/DemoCloudAlp/Suite_Commerce_Base_Theme/20.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'sc_advancedsignup_registrationform'; return template;});

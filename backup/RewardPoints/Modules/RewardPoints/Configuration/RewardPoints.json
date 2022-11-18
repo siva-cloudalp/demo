@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "RewardPoints.config": {
+            "group": "extensions",
+            "subtab": "RewardPoints_subtab",
+            "type": "string",
+            "title": "RewardPoints_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}
